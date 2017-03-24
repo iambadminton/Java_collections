@@ -27,7 +27,7 @@ public class OdParser {
                 //System.out.println(src.toString());
                 System.out.println("src.tagName=" + src.tagName() + " src.owntext=" + src.ownText() + " text=" +src.text() + " src.attr(\"abs:href\")=" + src.attr("abs:href"));
                 //if(src.attr("abs:href").matches("http://otdam-darom.livejournal.com")) {
-                if(src.attr("abs:href").toString().contentEquals(new StringBuffer("http://otdam-darom.livejournal.com"))) {
+                if(src.attr("abs:href").toString().toLowerCase().contains(new String("http://otdam-darom.livejournal.com").toLowerCase())) {
                     System.out.println("!!!!!" + src.text());
                 }
 //                System.out.println(src.attr("abs:href").toString().matches(""));
